@@ -1,4 +1,4 @@
-export function KanbanBoard() {
+export function List() {
   return (
     <div>
       <p>ola</p>
