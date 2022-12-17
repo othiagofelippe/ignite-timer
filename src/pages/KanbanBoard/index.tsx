@@ -1,7 +1,13 @@
+import { List } from './components/List'
+import { KanbanBoardContainer } from './styles'
+
 export function KanbanBoard() {
   return (
-    <div>
-      <p>ola</p>
-    </div>
+    <KanbanBoardContainer>
+      <List />
+      <List />
+      <List />
+      <List />
+    </KanbanBoardContainer>
   )
 }
