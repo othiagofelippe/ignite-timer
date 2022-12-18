@@ -31,8 +31,8 @@ export function List({ data }: ListProps) {
       </header>
 
       <ul>
-        {data.cards.map((card) => {
-          return <Card key={card.id} data={card} />
+        {data.cards.map((card, index) => {
+          return <Card key={card.id} index={index} data={card} />
         })}
       </ul>
     </ListContainer>

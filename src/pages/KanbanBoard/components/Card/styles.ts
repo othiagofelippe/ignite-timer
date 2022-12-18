@@ -1,7 +1,9 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
 
 interface StyledDivProps {
   isDragging: boolean
+  ref?: React.RefObject<HTMLDivElement>
 }
 
 export const CardContainer = styled.div<StyledDivProps>`
