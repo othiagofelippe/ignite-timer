@@ -3,7 +3,7 @@ import { useDrag } from 'react-dnd'
 import { CardContainer, Label } from './styles'
 
 interface CardProps {
-  data: { id: number; content: string; labels: string; url?: string }
+  data: { id: number; content: string; labels: string; user?: string }
 }
 
 export function Card({ data }: CardProps) {
@@ -16,12 +16,15 @@ export function Card({ data }: CardProps) {
   }))
 
   return (
-    <CardContainer ref={dragPreview}>
+    <CardContainer ref={dragPreview} isDragging={isDragging}>
       <header>
         <Label color="#7159C1" />
       </header>
       <p>Fazer a migração completa de servidor</p>
-      <img src="https://www.github.com/othiagofelippe.png" alt="" />
+
+      {data.user && (
+        <img src="https://www.github.com/othiagofelippe.png" alt="" />
+      )}
     </CardContainer>
   )
 }

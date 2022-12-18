@@ -25,6 +25,8 @@ export const ListContainer = styled.div`
     cursor: pointer;
   }
   ul {
+    max-height: 394px;
     margin-top: 30px;
+    overflow-y: scroll;
   }
 `

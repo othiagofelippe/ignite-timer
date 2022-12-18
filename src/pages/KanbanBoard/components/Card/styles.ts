@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components'
 
-export const CardContainer = styled.div`
+interface StyledDivProps {
+  isDragging: boolean
+}
+
+export const CardContainer = styled.div<StyledDivProps>`
   position: relative;
   background: #ffffff;
   border-radius: 5px;
@@ -22,6 +26,22 @@ export const CardContainer = styled.div`
     border-radius: 4px;
     margin-top: 5px;
   }
+
+  ${(props) =>
+    props.isDragging &&
+    css`
+      border: 2px dashed rgba(0, 0, 0, 0.2);
+      padding-top: 31px;
+      background: transparent;
+      box-shadow: none;
+      cursor: grabbing;
+
+      p,
+      img,
+      header {
+        opacity: 0;
+      }
+    `}
 `
 export const Label = styled.span`
   width: 10px;
