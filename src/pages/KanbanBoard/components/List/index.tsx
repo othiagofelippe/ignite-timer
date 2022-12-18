@@ -2,7 +2,23 @@ import { PlusCircle } from 'phosphor-react'
 import { Card } from '../Card'
 import { ListContainer } from './styles'
 
-export function List({ data }) {
+interface CardData {
+  id: number
+  content: string
+  labels: string
+  done?: boolean
+  user?: string
+}
+
+interface ListProps {
+  data: {
+    title: string
+    creatable: boolean
+    cards: CardData[]
+  }
+}
+
+export function List({ data }: ListProps) {
   return (
     <ListContainer>
       <header>
@@ -18,9 +34,6 @@ export function List({ data }) {
         {data.cards.map((card) => {
           return <Card key={card.id} data={card} />
         })}
-        <Card />
-        <Card />
-        <Card />
       </ul>
     </ListContainer>
   )

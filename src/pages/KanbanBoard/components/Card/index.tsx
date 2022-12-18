@@ -1,7 +1,12 @@
-import { CardContainer, Label } from './styles'
 import { useDrag } from 'react-dnd'
 
-export function Card({ data }) {
+import { CardContainer, Label } from './styles'
+
+interface CardProps {
+  data: { id: number; content: string; labels: string; url?: string }
+}
+
+export function Card({ data }: CardProps) {
   const [{ isDragging }, dragPreview] = useDrag(() => ({
     type: 'card',
     item: { data },
