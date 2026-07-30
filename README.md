@@ -4,6 +4,8 @@ A Pomodoro timer web app built with React. Built in December 2022 during Rockets
 
 🔗 [Live demo](https://ignite-timer-thiago-felippes-projects.vercel.app)
 
+![Ignite Timer screenshot](.github/screenshot.png)
+
 ## Features:
 
 - Start a timer for a task you name in the input field
