@@ -2,7 +2,7 @@
 
 A Pomodoro timer web app built with React. Built in December 2022 during Rocketseat's front-end course to practice Vite, Styled Components, React Router, React Hook Form and Zod.
 
-🔗 [Live demo](https://ignite-timer-virid-zeta.vercel.app)
+🔗 [Live demo](https://ignite-timer-thiago-felippes-projects.vercel.app)
 
 ## Features:
 
