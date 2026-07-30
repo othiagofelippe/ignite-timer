@@ -1,6 +1,8 @@
-# Ignite Timer - React
+# Ignite Timer
 
-This project was developed during Rocketseat's front-end course and consists of a productivity web app, a pomodoro timer.
+A Pomodoro timer web app built with React. Built in December 2022 during Rocketseat's front-end course to practice Vite, Styled Components, React Router, React Hook Form and Zod.
+
+🔗 [Live demo](https://ignite-timer-virid-zeta.vercel.app)
 
 ## Features:
 
